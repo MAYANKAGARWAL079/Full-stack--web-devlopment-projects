@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Single page website</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous"
+   referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #000;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: white;
+    }
+   
+   
+    header {
+      background-color: #777;
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    header p {
+      font-size: 1.5rem;
+    }
+    header a {
+      margin-top: 20px;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 40px 20px;
+    }
+    .footer-links a {
+      color: #ffc107;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    .social-icons i {
+      font-size: 20px;
+      margin: 0 10px;
+      color: #ffc107;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Bike Rent</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bikes">Bikes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rent">Rent</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#address">Address</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home">
+    <div class="text-center">
+      <img src="https://tirupati.callbike.co.in/wp-content/uploads/2023/11/CALL-BIKE-RENTALS-VIZAG-LOGO.png" alt="Bike Rent Logo" width="500" height="500" />
+      <h1>Welcome to Bike Rent</h1>
+      <p>Affordable, fast and flexible bike rental service</p>
+      <a href="#rent" class="btn btn-primary">Rent Now</a>
+    </div>
+  </header>
+
+  <main>
+   
+    <section id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2>About Us</h2>
+            <p>
+              Welcome to Call Bike, your reliable destination for easy and affordable bike rentals.
+              We offer a wide range of two-wheelers, from scooters to premium bikes, perfect for daily commutes or weekend rides.
+              Our goal is to make travel simple, flexible, and budget-friendly.
+              With easy online booking, well-maintained vehicles, and safety-first service, we ensure a smooth riding experience.
+              Whether you need a bike for a few hours or several days, we’ve got you covered.
+              RideXpress is trusted by thousands — join us and enjoy the freedom to ride anytime, anywhere.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="https://images.autox.com/uploads/bikes/2024/09/royal-enfield-bullet-350-500x261.jpg" alt="Bike Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="bikes">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Bikes</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/yamaha-select-model-racing-blue-1575873052608.jpg?q=80" class="card-img-top" alt="Yamaha R15">
+              <div class="card-body text-center">Yamaha R15</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/183389/classic-350-right-side-view-62.jpeg?isig=0" class="card-img-top" alt="Royal Enfield Classic">
+              <div class="card-body text-center">Royal Enfield Classic</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://cdn.riderly.com/storage/media/img/bikes/KTM__Duke_200_new.png" class="card-img-top" alt="KTM Duke">
+              <div class="card-body text-center">KTM Duke</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rent">
+      <div class="container">
+        <h2 class="text-center mb-4">Rent a Bike</h2>
+        <form>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <select name="bike" class="form-control" required>
+                <option value="">Choose Bike</option>
+                <option>Yamaha R15</option>
+                <option>Royal Enfield Classic</option>
+                <option>KTM Duke</option>
+              </select>
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="date" name="pickup" class="form-control" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="date" name="return" class="form-control" required>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-success">Submit Request</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  
+    <section id="contact">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p class="text-center">Phone: +91-9983576182</p>
+        <p class="text-center">Phone: +91-9783962425</p>
+        <div style="background-color: white; text-align: center; padding: 30px 0;">
+          <a href="mailto:mayankrampura2006@gmail.com" style="color: #007bff; font-size: 18px;">Email: mayankrampura2006@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="address">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Address</h2>
+        <p class="text-center">🏠 217, Choti Chopar, Jaipur, India</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container text-center">
+      <h5>Bike Rent</h5>
+      <p>&copy; 2025 Bike Rent. All rights reserved.</p>
+      <p>📞 +91-9983576182 | 📧 mayankrampura2006@gmail.com</p>
+      <p>🏠 217, Choti Chopar, Jaipur, India</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="vendor/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
